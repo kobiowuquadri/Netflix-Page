@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+     text-transform: capitalize;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
+}
+
+.hero-section {
+    background:linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.5)),no-repeat center url(../img/NG-en-20230327-popsignuptwoweeks-perspective_alpha_website_small\ \(1\).jpg);
+    height: 100vh;
+    background-size: cover;
+    color: #ffff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 10px 150px 0px 150px;
+}
+
+.navbar > button{
+    width: 80px;
+    height: 35px;
+    background-color: red;
+    border-radius: 7px;
+    border: none;
+    color: white;
+    font-size: .9rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.hero-contents{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height:85%;
+    gap: 1.3rem;
+    padding: 15px;
+}
+
+.hero-contents h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.hero-contents p {
+    font-size: 1.5rem;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+input {
+  background-color: transparent;
+  width: 30%;
+  height: 65px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  color: white;
+  padding: 10px;
+  font-size: 1.2rem;
+}
+input::placeholder{
+    padding: 10px;
+    color:grey;
+    font-size: 1.2rem;
+}
+
+form button {
+    width: 220px;
+    height: 65px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.7rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:700px){
+    .navbar{
+         padding: 10px 30px 0px 30px;
+    }
+    .hero-contents h1 {
+        font-size: 2.2rem;
+    }
+    .hero-contents p {
+        font-size: 1.2rem;
+    }
+    form {
+        flex-direction: column;
+    }
+    form input {
+        width: 100%;
+    }
+}
