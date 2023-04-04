@@ -137,15 +137,19 @@ form button {
 
 
 
-@media (max-width:700px){
+@media (max-width:800px){
     .navbar{
-         padding: 4px 10px 0px 10px;
+         padding: 4px 12px 0px 10px;
     }
     .hero-contents h1 {
         font-size: 2rem;
     }
     .hero-contents p {
         font-size: 1.2rem;
+    }
+    .hero-contents {
+        gap: .8rem;
+        padding: 5px;
     }
     form {
         flex-direction: column;
