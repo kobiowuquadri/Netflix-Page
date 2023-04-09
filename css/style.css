@@ -10,11 +10,33 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
 }
 
+
+
+  /* Variables */
+:root {
+    --red:rgb(255,0,0);
+    --white:rgb(255,255,255);
+    --grey:grey;
+    --dark:rgba(0,0,0);
+}
+
+body {
+    -webkit-user-select: none;
+    /* Safari */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, supported by Chrome and Opera */
+    overflow-x: hidden;
+  }
+
 .hero-section {
     background:linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.5)),no-repeat center url(../img/NG-en-20230327-popsignuptwoweeks-perspective_alpha_website_small\ \(1\).jpg);
     height: 100vh;
     background-size: cover;
-    color: #ffff;
+    color: var(--white);
     text-transform: capitalize;
 }
 
@@ -29,10 +51,10 @@
 .navbar > button{
     width: 80px;
     height: 35px;
-    background-color: red;
+    background-color: var(--red);
     border-radius: 7px;
     border: none;
-    color: white;
+    color: var(--white);
     font-size: .9rem;
     font-weight: 700;
     cursor: pointer;
@@ -69,23 +91,23 @@ input {
   background-color: transparent;
   width: 30%;
   height: 65px;
-  border: 1px solid grey;
+  border: 1px solid var(--grey);
   border-radius: 5px;
-  color: #fff;
+  color: var(--white);
   padding: 10px;
   font-size: 1.2rem;
 }
 input::placeholder{
     padding: 10px;
-    color:grey;
+    color:var(--grey);
     font-size: 1.2rem;
 }
 
 form button {
     width: 220px;
     height: 65px;
-    background-color: red;
-    color: white;
+    background-color: var(--red);
+    color: var(--white);
     border: none;
     border-radius: 5px;
     font-size: 1.7rem;
@@ -93,10 +115,52 @@ form button {
     cursor: pointer;
 }
 
+/* Main Section */
 
+/* Demo watch section */
+.demo_watch {
+    background-color: var(--dark);
+    color: var(--white);
+    display: flex;
+    gap: 50px;
+    padding: 80px 100px 50px 100px;
+}
 
+.demo_watch_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+    gap: 30px;
+}
 
+.demo_watch_content h2 {
+    font-size: 3rem;
+    font-weight: bolder;
+}
 
+.demo_watch_content p {
+    font-size: 1.5rem;
+}
+
+.download {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#download_size{
+    font-size: 3.2rem;
+}
+
+.watch {
+    padding:50px 200px;
+}
+
+.watch_sec {
+    text-align: left;
+    width: 450px;
+    padding: 30px;
+}
 
 
 
@@ -138,17 +202,25 @@ form button {
 
 
 @media (max-width:800px){
+    .hero-section {
+        height: 100%;
+        padding-bottom: 30px;
+    }
+
     .navbar{
          padding: 4px 12px 0px 10px;
     }
     .hero-contents h1 {
         font-size: 2rem;
+        padding-top: 40px; 
     }
     .hero-contents p {
         font-size: 1.2rem;
+        justify-content: center;
+        padding:0px 20px;
     }
     .hero-contents {
-        gap: .8rem;
+        gap: 1.5rem;
         padding: 5px;
     }
     form {
@@ -157,4 +229,48 @@ form button {
     form input {
         width: 100%;
     }
+
+    /* Demo watch section */
+
+    .demo_watch {
+        padding: 15px;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .demo_watch_content{
+        padding: 10px;
+        gap: 15px;
+    }
+
+    .demo_watch_content h2{
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .demo_watch_content p {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .demo_watch_gif img {
+        width: 100%;
+    }
+    
+    #download_size{
+        font-size:2rem;
+    }
+    
+    .watch {
+        padding: 50px;
+    }
+    .watch_sec {
+        width: 100%;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    
+   
+    
+
 }
