@@ -103,7 +103,7 @@ input::placeholder{
     font-size: 1.2rem;
 }
 
-form button {
+input[type="submit"]{
     width: 220px;
     height: 65px;
     background-color: var(--red);
