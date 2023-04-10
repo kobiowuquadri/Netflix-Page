@@ -1,3 +1,10 @@
+/* Desktop Design
+#################
+START!!!!!!!!!!!!
+#################
+*/
+
+
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&display=swap');
 
 
@@ -297,24 +304,19 @@ select {
     gap: 20px;
 }
 
+/* Desktop Design
+###############
+END!!!!!!!!!!!!
+###############
+*/
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Mobile Responsive
+##################
+START!!!!!!!!!!!!!
+##################
+*/
 
 @media (max-width:800px){
     .hero-section {
@@ -421,8 +423,10 @@ select {
     justify-content: flex-start;
     padding: 5px;
   }
-
-
-    
-
 }
+
+/* Mobile Responsive
+#################
+DONE!!!!!!!!!!!!!
+#################
+*/
