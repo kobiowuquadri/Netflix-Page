@@ -28,7 +28,8 @@ START!!!!!!!!!!!!
     --footer_color:rgb(183, 179, 179);
 }
 
-body {
+html, body {
+    max-width: 100%;
     box-sizing: border-box;
     -webkit-user-select: none;
     /* Safari */

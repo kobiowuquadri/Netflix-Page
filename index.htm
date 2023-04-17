@@ -9,6 +9,8 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="shortcut icon" href="./img/favicon_1.png" type="image/x-icon">
         <link rel="stylesheet" href="./css/style.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     </head>
     <body>
         <!-- Hero Section -->
@@ -18,10 +20,10 @@
                 <button>Sign In</button>
             </nav>
             <div class="hero-contents">
-                <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo, sed..</h1>
-                <p>Lorem ipsum dolor sit..</p>
+                <h1>Unlimited movies, TV shows, and more.</h1>
+                <p>Watch anywhere. Cancel anytime.</p>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem sapiente in placeat nisi adipisci dolores.
+                   Ready to watch? Enter your email to create or restart your membership.
                 </p>
                 <form action="javascript:void()">
                     <input type="email" placeholder="Email address">
@@ -33,29 +35,29 @@
         <!-- Main Section -->
         <main class="main">
             <div class="demo_watch">
-                <div class="demo_watch_content">
+                <div class="demo_watch_content" data-aos="fade-down-right">
                     <h2>Enjoy on your TV.</h2>
                     <p>
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime praesentium doloremque quo molestias cupiditate accusamus nulla necessitatibus modi possimus est?.
                     </p>
                 </div>
-                <div class="demo_watch_gif">
+                <div class="demo_watch_gif" data-aos="fade-down-left">
                     <img src="./img/tv.png" width="500px" alt="">
                 </div>
             </div>
             <hr style="height: 8px" color="#333">
-            <div class="demo_watch download">
+            <div class="demo_watch download" data-aos="fade-down-right">
                 <div class="demo_watch_content">
                     <h2 id="download_size">Download your shows to watch offline.</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, exercitationem!</p>
                 </div>
-                <div class="demo_watch_gif">
+                <div class="demo_watch_gif" data-aos="fade-down-left">
                     <img src="./img/mobile-0819.jpg" width="500px" alt="">
                 </div>
             </div>
             <hr style="height: 8px" color="#333">
             <div class="demo_watch watch">
-                <div class="demo_watch_content watch_sec">
+                <div class="demo_watch_content watch_sec" data-aos="fade-down-right">
                     <h2 id="download_size">Watch everywhere.</h2>
                     <p>
                         Stream unlimited movies and TV shows on your phone, tablet, laptop,
@@ -65,14 +67,14 @@
             </div>
             <hr style="height: 8px" color="#333">
             <div class="demo_watch download">
-                <div class="demo_watch_content">
+                <div class="demo_watch_content" data-aos="fade-down-right">
                     <h2 id="download_size">Create profiles for kids.</h2>
                     <p>
                         Send kids on adventures with their favorite characters in a space
             made just for them—free with your membership.
                     </p>
                 </div>
-                <div class="demo_watch_gif">
+                <div class="demo_watch_gif" data-aos="fade-down-left">
                     <img src="./img/AAAABfpnX3dbgjZ-Je8Ax3xn0kXehZm_5L6-xe6YSTq_ucht9TI5jwDMqusWZKNYT8DfGudD0_wWVVTFLiN2_kaQJumz2iivUWbIbAtF.png" width="500px" alt="">
                 </div>
             </div>
@@ -159,7 +161,7 @@
             Questions? Contact us.
         </p>
         <div class="footer_links">
-            <div class="link_1">
+            <div class="link_1" data-aos="fade-down-right">
                 <ul>
                     <li class="foot_link">
                         <a href="#">
@@ -188,7 +190,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="link_2">
+            <div class="link_2" data-aos="fade-down-right">
                 <ul>
                     <li class="foot_link">
                         <a href="#">
@@ -209,7 +211,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="link_3">
+            <div class="link_3" data-aos="fade-down-right">
                 <ul>
                     <li class="foot_link">
                         <a href="#">
@@ -241,5 +243,8 @@
         </div>
     </div>
     <script src="./js/script.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
